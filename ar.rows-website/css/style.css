@@ -1,0 +1,583 @@
+
+/* 初期化 */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+html *{
+  box-sizing: border-box;
+}
+
+ul{
+  list-style:none;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color:black; /*#660016 */
+  height:auto;
+}
+
+/* ヘッダー */
+
+header{
+  background-color: rgba(0,0,0,0.8);
+  position:fixed;
+  width:100%;
+  height:100px;
+  top:0;
+  z-index: 10;
+}
+
+.container{
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-logo{
+  margin-left: 43%;
+  float:left;
+  display:inline-block;
+  width: 200px;
+}
+
+.menu-icon{
+  color: white;
+  float: right;
+  font-size:30px;
+  margin:28px;
+  cursor: pointer;
+  /*display:none;*/
+}
+
+.cross-icon{
+  color: white;
+  float: right;
+  font-size:30px;
+  margin:28px;
+  cursor: pointer;
+  display:none;
+}
+
+.header-list{
+  display:inline-block;
+}
+
+/* メニュー内　*/
+
+.menu{
+  display:none;
+  background-color: rgba(0,0,0,0.8);
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:100px;
+  z-index: 10;
+}
+
+.menu-item{
+  font-size: 50px;
+  display:inline-block;
+  float:left;
+  opacity:0.7;
+  color:white;
+  width:25%;
+  text-align: center;
+  padding-left:90px;
+  margin-bottom: 100px;
+}
+
+.nav{
+  padding-top:50px;
+}
+
+li :hover{
+  opacity:1.0;
+}
+
+.instagram, .twitter, .facebook, .youtube{
+  width:25%;
+}
+
+/* ヘッダーとフッター以外　*/
+.home-wrapper{
+  margin: 50px auto 0 auto;
+  width: 100%;
+}
+
+.top-image{
+  position:relative;
+}
+
+.our-image{
+  width:100%;
+/*  border: 6px groove black; */
+}
+
+.home-mesg{
+  color: white;
+  position:absolute;
+  top:10%;
+  left: 38%;
+  font-size: 50px;
+}
+
+#mesg1{
+  display: none;
+}
+
+#mesg2{
+  display: none;
+}
+
+#mesg3{
+  display: none;
+}
+
+.our-info{
+  opacity: 0.6;
+  font-family: ui-monospace;
+  color: white;
+  position:absolute;
+  top:60%;
+  left: 1%;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* フォトギャラリー */
+.photo-gallery{
+  padding-top: 50px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.photo-gallery h2{
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.home-photo{
+  width: 100%;
+}
+
+footer{
+  text-align: center;
+  margin-top: 30px;
+  padding: 80px 15px 20px 15px;
+  font-size: 15px;
+  font-family: monospace;
+  color: white;
+  opacity: 0.7;
+}
+
+/* index.html以外のhtml */
+.wrapper{
+  margin: 150px auto 0 auto;
+  width: 100%;
+}
+
+.main-wrapper{
+  margin:0 auto;
+  max-width: 800px;
+}
+
+#top-mesg{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+/* schedule.html */
+.schedule-main-wrapper{
+  margin:0 auto;
+  max-width: 800px;
+  padding:0 20px;
+}
+
+.live{
+  padding-bottom: 20px;
+}
+
+.live h2{
+  float:left;
+}
+
+.live-menu-icon{
+  float: right;
+  font-size: 25px;
+}
+
+.live-menu-close-icon{
+  float:right;
+  font-size: 25px;
+  display: none;
+}
+
+.top-live{
+  height: 80px;
+  background-color: rgba(255,255,255,0.3)
+}
+
+.top-live-content{
+  padding: 16px;
+}
+
+.live-details{
+  background-color: rgba(255,255,255,0.3);
+  border-top: solid 1px #c0c0c0;
+  display: none;
+  padding: 16px;
+}
+
+.right{
+  text-align: right;
+}
+
+/* about.html */
+
+.about-main-wrapper{
+  margin:0 auto;
+  max-width: 1000px;
+  padding: 0 20px
+}
+
+.biography{
+  height: 400px;
+}
+
+.band-image{
+  padding-top: 20px;
+  float:left;
+  width:50%;
+}
+
+.band-info{
+  padding-top: 20px;
+  width:45%;
+  float: right;
+}
+
+.band-info p{
+  font-size: 18px
+}
+
+.members{
+  padding-top:20px;
+  height:500px;
+}
+
+.member{
+  padding: 10px 8px;
+  float:left;
+  width:25%;
+}
+
+.member-image{
+  width: 100%;
+}
+
+.member-image img{
+  width:100%;
+}
+
+.text-contents{
+  text-align: center;
+  color:white;
+}
+
+.member-sns{
+  color:rgb(212, 207, 88);
+}
+
+/* music.html */
+.videos{
+  text-align: center;
+  padding:20px 0;
+}
+
+.video-type{
+  margin:20px 0;
+  width:100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.video{
+  padding-bottom: 20px;
+}
+
+.covers{
+  display: none;
+}
+
+.original-songs{
+  display: none;
+}
+
+.type-button{
+  width:50%;
+  float:left;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.active{
+  display: block;
+}
+
+/* iPad Pro */
+@media(max-width: 1200px){
+  .menu-item{
+    margin-top:auto;
+    width:33%;
+    padding-bottom: 14px;
+  }
+}
+
+/* iPad */
+@media(max-width: 1000px){
+  .header-logo{
+    margin-left: 37%;
+  }
+
+  .menu-item{
+    padding-left:0px;
+    width:50%;
+    padding-bottom: 14px;
+  }
+
+  .home-mesg{
+    top:17%;
+    left: 30%;
+    font-size: 40px;
+  }
+
+  .our-info{
+    top:80%;
+    left: 1%;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 479px){
+  /* ヘッダー*/
+  header{
+    width:100%;
+    height:65px;
+    top:0;
+    z-index: 10;
+  }
+
+  .header-logo{
+    margin-left: 30%;
+    float:left;
+    display:inline-block;
+    width: 140px;
+  }
+
+  .menu-icon{
+    color: white;
+    float: right;
+    font-size:27px;
+    margin:10px 20px;
+    cursor: pointer;
+    /*display:none;*/
+  }
+
+  .cross-icon{
+    color: white;
+    float: right;
+    font-size:27px;
+    margin:10px 20px;
+    cursor: pointer;
+    display:none;
+  }
+
+  .home-mesg{
+    top:10%;
+    left: 30%;
+    font-size: 20px;
+  }
+
+  .our-info{
+    top:75%;
+    left: 1%;
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  /* フォトギャラリー */
+  .photo-gallery{
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  .photo-gallery h2{
+    font-size: 30px;
+  }
+
+  .home-photo{
+    width: 100%;
+  }
+
+  /* メニュー内　*/
+  .menu{
+    display:none;
+    background-color: rgba(0,0,0,0.8);
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:64.9px;
+    z-index: 10;
+  }
+
+  .menu-item{
+    font-size: 34px;
+    width:100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .instagram, .twitter, .facebook, .youtube{
+    width:50%;
+  }
+
+  .nav{
+    padding-top:17px;
+  }
+
+  /* index.html以外のhtml */
+  .wrapper{
+    margin:20% auto;
+  }
+
+  .main-wrapper{
+    margin:0 auto;
+    max-width: 800px;
+  }
+
+  #top-mesg{
+    font-size: 30px;
+  }
+
+  /*schedule.html*/
+  .schedule-main-wrapper{
+    margin:0;
+    width: 100%;
+    padding:0 20px;
+  }
+
+  .live{
+    padding-bottom: 10px;
+  }
+
+  .live h2{
+    float:left;
+  }
+
+  .live-menu-icon{
+    float: right;
+    font-size: 25px;
+  }
+
+  .live-menu-close-icon{
+    float:right;
+    font-size: 25px;
+    display: none;
+  }
+
+  .top-live{
+    height: 80px;
+    background-color: rgba(255,255,255,0.3)
+  }
+
+  .top-live-content{
+    padding: 16px;
+  }
+
+  .live-details{
+    background-color: rgba(255,255,255,0.3);
+    border-top: solid 1px #c0c0c0;
+    display: none;
+    padding: 16px;
+  }
+
+  .right{
+    text-align: right;
+  }
+
+  /*about.html*/
+  .biography{
+    height: 400px;
+  }
+
+  .band-image{
+    float:left;
+    width:100%;
+  }
+
+  .band-info{
+    width:100%;
+    padding-bottom: 20px;
+  }
+
+  .members{
+    height:900px;
+  }
+
+  .member{
+    width:50%;
+    height:240px;
+  }
+
+  .text-contents{
+    text-align: center;
+    color: white;
+  }
+
+  /* music.html */
+  .videos{
+    text-align: center;
+    padding:20px 0;
+  }
+
+  .video-type{
+    margin:20px 0;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .video{
+    padding-bottom: 20px;
+    width; ;
+  }
+
+  .video iframe{
+    width: 100%;
+    height: 100%;
+ }
+
+  .type-button{
+    width:50%;
+    float:left;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+}
