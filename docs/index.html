@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | My project</title>
-    <!-- <script type="text/javascript" src="windowResize.js"></script> -->
   </head>
   <body style="text-align: center">
-    <!-- <canvas id="unity-canvas" width=1284 height=2778 style="width: 1284px; height: 2778px; background: #231F20"></canvas> -->
-    <canvas id="unity-canvas" width=128 height=277 style="width: 128px; height: 277px; background: #231F20"></canvas>
-    <script src="Build/pixelmatch_v2.loader.js"></script>
+    <canvas id="unity-canvas" width=321 height=694 style="width: 321px; height: 694px; background: #231F20"></canvas>
+    <script src="Build/pixelmatch_v4.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -20,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/pixelmatch_v2.data.gz",
-        frameworkUrl: "Build/pixelmatch_v2.framework.js.gz",
-        codeUrl: "Build/pixelmatch_v2.wasm.gz",
+        dataUrl: "Build/pixelmatch_v4.data.gz",
+        frameworkUrl: "Build/pixelmatch_v4.framework.js.gz",
+        codeUrl: "Build/pixelmatch_v4.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "My project",
