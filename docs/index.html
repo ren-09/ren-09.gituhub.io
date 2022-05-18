@@ -6,7 +6,6 @@
     <title>Unity WebGL Player | My project</title>
   </head>
   <body style="text-align: center">
-    <h1>こんにちは</h1>
     <canvas id="unity-canvas" width=321 height=694 style="width: 321px; height: 694px; background: #231F20"></canvas>
     <script src="Build/pixelmatch_v7.loader.js"></script>
     <script>
@@ -19,9 +18,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/pixelmatch_v7.data",
-        frameworkUrl: "Build/pixelmatch_v7.framework.js",
-        codeUrl: "Build/pixelmatch_v7.wasm",
+        dataUrl: "Build/pixelmatch_v7.data.gz",
+        frameworkUrl: "Build/pixelmatch_v7.framework.js.gz",
+        codeUrl: "Build/pixelmatch_v7.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "My project",
