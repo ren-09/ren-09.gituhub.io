@@ -6,6 +6,8 @@
     <title>Unity WebGL Player | webGL_PixelPaint</title>
   </head>
   <body style="text-align: center">
+    <h3>Pixel Paint(模写)</h3>
+    <a href="https://github.com/ren-09/Unity-PixelPaint">コードはこちら</a>
     <canvas id="unity-canvas" width=321 height=694 style="width: 321px; height: 694px; background: #231F20"></canvas>
     <script src="Build/WebGL_PixelPaint_V3.loader.js"></script>
     <script>
@@ -18,9 +20,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebGL_PixelPaint_V3.data.gz",
-        frameworkUrl: "Build/WebGL_PixelPaint_V3.framework.js.gz",
-        codeUrl: "Build/WebGL_PixelPaint_V3.wasm.gz",
+        dataUrl: "Build/WebGL_PixelPaint_V3.data",
+        frameworkUrl: "Build/WebGL_PixelPaint_V3.framework.js",
+        codeUrl: "Build/WebGL_PixelPaint_V3.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "webGL_PixelPaint",
